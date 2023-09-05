@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/exampleFragment">
+
+        <fragment
+            android:id="@+id/exampleFragment"
+            android:name="com.example.sshinjectexample.ui.main.MainFragment"
+            android:label="ExampleFragment" >
+            <action
+                android:id="@+id/action_exampleFragment_to_resultFragment3"
+                app:destination="@id/resultFragment3" />
+        </fragment>
+        <fragment
+            android:id="@+id/resultFragment3"
+            android:name="com.example.sshinjectexample.ui.result.ResultFragment"
+            android:label="ResultFragment" />
+</navigation>
